@@ -34,13 +34,13 @@ function App() {
           <div className="order-2 md:order-1 col-start-1 col-end-7 flex flex-col items-start justify-center gap-4 md:gap-6 lg:gap-8">
             <hr className="border-t-4 border-brown-text w-1/3 md:w-full" />
             <h1 className="font-serif font-bold text-brown-text text-5xl lg:text-7xl leading-snug">Psicóloga <br />Tamires Brito</h1>
-            <p className="text-opacity-85 font-sans font-semibold text-base lg:text-xl text-secondary-text pb-4 md:pb-8 leading-normal">Bem-vindo ao meu espaço de cuidado e bem-estar emocional. Com apoio psicologico personalizado para ajudar você a enfrentar desafios, promover autoconhecimento e alcançar uma vida mais equilibra e feliz.</p>
+            <p className="text-opacity-85 font-sans font-semibold text-base lg:text-xl text-secondary-text pb-4 md:pb-8 leading-normal">Bem-vindo ao meu espaço de cuidado e bem-estar emocional. Com apoio psicologico personalizado para ajudar você a enfrentar desafios, promover autoconhecimento e alcançar uma vida mais equilibrada e feliz.</p>
             <a href="#sobre-mim" className="flex items-center justify-center w-full lg:w-80 bg-transparent hover:bg-button-green/10 text-button-green font-semibold py-3 md:py-4 px-12 border border-button-green rounded-xl shadow-md">Saiba mais</a>
           </div>
           <div className="mb-6 md:mb-0 order-1 md:order-2 col-start-1 col-end-12 md:col-start-8 lg:col-start-8 md:col-end-13 w-full flex items-center justify-center">
             <div className="relative h-[460px] w-full lg:h-[670px] lg:w-[500px] rounded-full">
               <div className="absolute top-0 right-0 md:-top-4 md:-right-2 lg:top-6 lg:right-2 bg-custom-pink rounded-full w-24 h-24 shadow-[0px_10px_20px_4px_#00000024]"></div>
-              <HeroImage  src="hero-1.JPG"/>
+              <HeroImage  src="hero-1.webp"/>
             </div>
           </div>
         </div>
@@ -48,7 +48,7 @@ function App() {
       <section id="sobre-mim" className="w-full flex items-start justify-center py-4 md:py-8 xl:py-16 bg-secondary-background">
         <div className="px-4 md:px-8 xl:px-40 grid grid-cols-1 md:grid-cols-12 lg:gap-x-5">
           <div className="h-[454px] lg:h-[550px] xl:h-[700px] mb-6 md:mb-0 order-1 col-start-1 col-end-12 md:col-start-1 md:col-end-6 w-full flex items-center justify-center">
-            <AboutMeDiv src="about-me.JPG" />
+            <AboutMeDiv src="about-me.webp" />
           </div>
           <div className="order-2 md:order-1 col-start-1 col-end-12 md:col-start-7 md:col-end-13 flex flex-col items-start justify-start gap-8">
             <div>
@@ -81,7 +81,7 @@ function App() {
             </p>
           </div>
           <div className="h-[460px] lg:h-[600px] mb-6 md:mb-0 order-1 md:order-2 col-start-1 col-end-12 md:col-start-8 lg:col-start-8 md:col-end-13 w-full flex items-center justify-center">
-              <AbordagemDiv src="abordagem.JPG"/>
+              <AbordagemDiv src="abordagem.webp"/>
           </div>
         </div>
       </section>
