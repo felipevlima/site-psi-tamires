@@ -9,6 +9,10 @@ export const HeroImage = styled.div`
   border-radius: 280px;
 `
 
+export const MenuLink = styled.a`
+
+`
+
 export const AboutMeDiv = styled.div`
   display: flex;
   align-items: center;
@@ -19,6 +23,20 @@ export const AboutMeDiv = styled.div`
   background: url(${props => props.src}) top center no-repeat;
   background-size: cover;
   box-shadow: 0px 10px 20px 4px #00000024;
+`
+
+export const AbordagemDiv = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 0px 128px 0px 128px;
+  border-radius: 128px 0px 128px 8px;
+  background: url(${props => props.src}) top center no-repeat;
+  background-size: cover;
+  box-shadow: 0px 10px 20px 4px #00000024;
+
 `
 
 export const InputContainer = styled.div`
@@ -38,7 +56,7 @@ export const InputContainer = styled.div`
 
 export const InputField = styled.input`
   width: 100%;
-  padding: 8px 16px;
+  padding: 12px 16px;
   border: 1px solid #70826b;
   background: white;
   border-radius: 12px;
@@ -47,7 +65,7 @@ export const InputField = styled.input`
 
 export const TextAreaField = styled.textarea`
     width: 100%;
-    padding: 8px 16px;
+    padding: 12px 16px;
     border: 1px solid #70826b;
     background: white;
     border-radius: 12px;
@@ -64,4 +82,9 @@ export const Button = styled.a`
   align-items: center;
   justify-content: center;
   font-weight: bold;
+  transition: filter 0.2s ease-in-out;
+
+  &:hover {
+    filter: brightness(0.9);
+  }
 `

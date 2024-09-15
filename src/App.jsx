@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { AboutMeDiv, Button, HeroImage, InputContainer, InputField, TextAreaField } from "./styles"
+import { AbordagemDiv, AboutMeDiv, Button, HeroImage, InputContainer, InputField, MenuLink, TextAreaField } from "./styles"
 
 function App() {
   const cellphoneNumber = 5571983243215
@@ -17,13 +17,13 @@ function App() {
           <nav className="hidden md:block">
             <ul className="flex gap-11">
               <li>
-                <a href="#sobre-mim" className="text-brown-text text-base font-bold hover:border-b-2">Sobre mim</a>
+                <MenuLink href="#sobre-mim" className="text-brown-text text-base font-bold">Sobre mim</MenuLink>
               </li>
               <li>
-                <a href="#abordagens" className="text-brown-text text-base font-bold hover:border-b-2">Abordagem</a>
+                <MenuLink href="#abordagens" className="text-brown-text text-base font-bold">Abordagem</MenuLink>
               </li>
               <li>
-                <a href="#contato" className="text-brown-text text-base font-bold hover:border-b-2">Contato</a>
+                <MenuLink href="#contato" className="text-brown-text text-base font-bold">Contato</MenuLink>
               </li>
             </ul>
           </nav>
@@ -34,8 +34,8 @@ function App() {
           <div className="order-2 md:order-1 col-start-1 col-end-7 flex flex-col items-start justify-center gap-4 md:gap-6 lg:gap-8">
             <hr className="border-t-4 border-brown-text w-1/3 md:w-full" />
             <h1 className="font-serif font-bold text-brown-text text-5xl lg:text-7xl leading-snug">Psicóloga <br />Tamires Brito</h1>
-            <p className="font-sans font-bold  text-base lg:text-xl text-secondary-text pb-8 leading-normal">Bem-vindo ao meu espaço de cuidado e bem-estar emocional. Com apoio psicologico personalizado para ajudar você a enfrentar desafios, promover autoconhecimento e alcançar uma vida mais equilibra e feliz.</p>
-            <a href="#sobre-mim" className="flex items-center justify-center w-full lg:w-80 bg-transparent hover:bg-button-green/10 text-button-green font-semibold py-4 px-12 border border-button-green rounded-xl shadow-md">Saiba mais</a>
+            <p className="text-opacity-85 font-sans font-semibold text-base lg:text-xl text-secondary-text pb-4 md:pb-8 leading-normal">Bem-vindo ao meu espaço de cuidado e bem-estar emocional. Com apoio psicologico personalizado para ajudar você a enfrentar desafios, promover autoconhecimento e alcançar uma vida mais equilibra e feliz.</p>
+            <a href="#sobre-mim" className="flex items-center justify-center w-full lg:w-80 bg-transparent hover:bg-button-green/10 text-button-green font-semibold py-3 md:py-4 px-12 border border-button-green rounded-xl shadow-md">Saiba mais</a>
           </div>
           <div className="mb-6 md:mb-0 order-1 md:order-2 col-start-1 col-end-12 md:col-start-8 lg:col-start-8 md:col-end-13 w-full flex items-center justify-center">
             <div className="relative h-[460px] w-full lg:h-[670px] lg:w-[500px] rounded-full">
@@ -44,7 +44,6 @@ function App() {
             </div>
           </div>
         </div>
-       
       </section>
       <section id="sobre-mim" className="w-full flex items-start justify-center py-4 md:py-8 xl:py-16 bg-secondary-background">
         <div className="px-4 md:px-8 xl:px-40 grid grid-cols-1 md:grid-cols-12 lg:gap-x-5">
@@ -56,25 +55,38 @@ function App() {
               <h1 className="text-4xl lg:text-5xl font-serif font-bold text-brown-text leading-snug mb-3">Sobre mim</h1>
               <hr className="border-t-4 border-brown-text w-full" />
             </div>
-            <p className="font-sans font-bold text-base lg:text-xl text-secondary-text pb-8 leading-normal">
-              Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsumLorem ipsum Lorem ipsumLorem ipsum Lorem ipsumLorem ipsum Lorem ipsumLorem ipsum Lorem ipsumLorem ipsum Lorem ipsumLorem ipsum Lorem ipsumLorem ipsum Lorem ipsum
+            <p className="text-opacity-85 font-sans font-semibold text-base md:text-sm lg:text-base xl:text-xl text-secondary-text pb-8 leading-normal">
+              Sou psicóloga especializada na abordagem de Análise do Comportamento e ofereço acompanhamento psicoterapêutico personalizado. Minha prática é focada em ajudar indivíduos a superar desafios emocionais e comportamentais, promovendo bem-estar e qualidade de vida.
               <br />
               <br />
-              Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsumLorem ipsum Lorem ipsumLorem ipsum Lorem ipsumLorem ipsum Lorem ipsumLorem ipsum Lorem ipsumLorem ipsum Lorem ipsumLorem ipsum Lorem ipsumLorem ipsum Lorem ipsum
+              Tenho vasta experiência em tratar questões como depressão, estresse, ansiedade, angústia e compulsões alimentares, entre outros problemas relacionados. Utilizo técnicas baseadas em evidências científicas para desenvolver estratégias eficazes e adaptadas às necessidades de cada cliente.
+              <br />
+              <br />
+              Estou comprometida em proporcionar um ambiente acolhedor e seguro, onde você pode explorar suas preocupações e trabalhar em direção a uma vida mais equilibrada e satisfatória.
             </p>
           </div>
         </div>
       </section>
-      <section id="abordagens" className="w-full flex items-start justify-center h-screen py-4 md:py-16">
-        <div className="px-4 md:px-8 xl:px-40 grid grid-cols-1 md:grid-cols-12 lg:gap-x-5">
-          <div className="col-start-1 col-end-12 w-full">
+      <section id="abordagens" className="w-full flex items-start justify-center py-4 md:py-8 xl:py-16">
+        <div className="px-4 md:px-8 xl:px-40 grid grid-cols-1 md:grid-cols-12 xl:gap-x-5">
+          <div className="order-2 md:order-1 col-start-1 col-end-7 flex flex-col items-start gap-2">
             <h1 className="text-4xl font-serif font-bold text-brown-text md:text-5xl leading-snug mb-3">Minha abordagem</h1>
-            <hr className="border-t-4 border-brown-text w-10/12 md:w-8/12" />
+            <hr className="border-t-4 border-brown-text w-10/12 md:w-8/12 mb-4" />
+            <h3 className="font-sans font-bold text-2xl text-brown-text mt-2 md:mb-2 ">Analise do Comportamento</h3>
+            <p className="text-opacity-85 font-sans font-semibold text-base md:text-sm lg:text-base xl:text-xl text-secondary-text pb-8 leading-normal">
+              Na abordagem de Análise do Comportamento, focamos em entender e modificar padrões de comportamento para promover mudanças positivas e duradouras. Utilizamos técnicas baseadas em evidências científicas para identificar os fatores que influenciam o comportamento e desenvolver estratégias personalizadas para cada indivíduo.
+              <br />
+              <br />
+              Nosso objetivo é ajudar nossos clientes a alcançar seus objetivos pessoais e profissionais, melhorando a qualidade de vida e o bem-estar geral. Através de uma análise detalhada e intervenções específicas, trabalhamos para criar um ambiente que favoreça o desenvolvimento e a manutenção de comportamentos desejáveis.
+            </p>
+          </div>
+          <div className="h-[460px] lg:h-[600px] mb-6 md:mb-0 order-1 md:order-2 col-start-1 col-end-12 md:col-start-8 lg:col-start-8 md:col-end-13 w-full flex items-center justify-center">
+              <AbordagemDiv src="abordagem.JPG"/>
           </div>
         </div>
       </section>
       <section id="contato" className="w-full flex items-start justify-center py-4 md:py-8 xl:py-16 bg-secondary-background">
-         <div className="w-full px-4 md:px-8 xl:px-40 grid grid-cols-1 md:grid-cols-12 xl:gap-x-5">
+        <div className="w-full px-4 md:px-8 xl:px-40 grid grid-cols-1 md:grid-cols-12 xl:gap-x-5">
           <div className="col-start-1 col-end-12 w-full flex flex-col items-start gap-4 mb-6">
             <hr className="border-t-4 border-brown-text w-3/12" />
             <h1 className="text-4xl font-serif font-bold text-brown-text md:text-5xl leading-snug">Agende uma consulta</h1>
@@ -121,8 +133,8 @@ function App() {
           </div>
          </div>
       </section>
-      <footer className="w-full h-44 bg-secondary-background flex items-center justify-center">
-        <p className="font-normal font-gray">Desenvolvido com ❤️ por Felipe Lima</p>
+      <footer className="w-full h-28 bg-secondary-background flex flex-col items-center justify-center gap-2">
+        <p className="text-sm text-header-background">Copyright © 2024 Psi Tamires Brito</p>
       </footer>
     </div>
   )
