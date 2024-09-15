@@ -2,11 +2,12 @@ import { useState } from "react"
 import { AboutMeDiv, Button, HeroImage, InputContainer, InputField, TextAreaField } from "./styles"
 
 function App() {
+  const cellphoneNumber = 5571983243215
   const [name, setName] = useState('')
   const [messager, setMessager] = useState('')
 
-  const whatsAppLink = `https://api.whatsapp.com/send?phone=${encodeURIComponent(71996622771)}&text=${encodeURIComponent(`Olá, me chamo ${name}. ${messager}`)}`
-  const whatsAppLinkWithoutMessage = `https://api.whatsapp.com/send?phone=${encodeURIComponent(71996622771)}`
+  const whatsAppLink = `https://api.whatsapp.com/send?phone=${encodeURIComponent(cellphoneNumber)}&text=${encodeURIComponent(`Olá, me chamo ${name}. ${messager}`)}`
+  const whatsAppLinkWithoutMessage = `https://api.whatsapp.com/send?phone=${encodeURIComponent(cellphoneNumber)}`
 
   return (
     <div className="w-full h-full scroll-smooth">
