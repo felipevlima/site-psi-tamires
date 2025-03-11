@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { AbordagemDiv, AboutMeDiv, Button, HeroImage, InputContainer, InputField, MenuLink, TextAreaField } from "./styles"
-import { SpeedInsights } from "@vercel/speed-insights/next"
+// import { SpeedInsights } from "@vercel/speed-insights/next"
 
 function App() {
   const cellphoneNumber = 5571983243215
@@ -12,7 +12,6 @@ function App() {
 
   return (
     <>
-      <SpeedInsights />
       <div className="w-full h-full scroll-smooth">
         <header className="px-4 md:px-8 xl:px-40 bg-background h-16 flex items-center justify-center">
           <div className="w-full flex items-center justify-between">
